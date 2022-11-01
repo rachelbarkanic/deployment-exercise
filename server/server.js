@@ -10,7 +10,7 @@ app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname, "../index.html"));
 })
 
-const port = processs.env.PORT || 4005;
+const port = process.env.PORT || 4005;
 
 app.listen(port, () => {
     console.log(`up on ${port}`);
