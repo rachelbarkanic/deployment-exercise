@@ -9,19 +9,22 @@ app.use(express.json());
 //Middleware
 app.use(express.static(path.join(__dirname, "../public")));
 
+//Don't need because whole folder is being served
+// app.use("/styles", express.static(path.join(__dirname, "../public/index.css"))); 
+
 
 //Endpoints
 // app.get("/", function(req,res) {
 //     res.sendFile(path.join(__dirname, "../public"));
-// })
+// });
 
 // app.get("/", function(req, res) {
 //     res.sendFile(path.join(__dirname, "../public/index.html"));
-// })
+// });
 
 // app.get("/styles", function(req, res) {
 //     res.sendFile(path.join(__dirname, "../public/index.css"));
-// })
+// });
 
 
 
